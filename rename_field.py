@@ -1,4 +1,6 @@
-# Script de procesamiento utilizando decoradores
+# Script de procesamiento utilizando decoradores.
+# Fuente: https://github.com/qgisco/curso-introduccion-pyqgis
+
 # Importe de librerias
 from qgis.core import edit
 from qgis.processing import alg
@@ -37,4 +39,3 @@ def renombrar_campo(instance, parameters, context, feedback, inputs):
     return {'OUTPUT': source}
     
 # Fin de código
-    
