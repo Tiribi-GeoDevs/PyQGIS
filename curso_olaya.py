@@ -94,3 +94,21 @@ def createLayer(n):
 randomLayer = createLayer(50)
 print(len(list(randomLayer.getFeatures())))
 QgsProject.instance().addMapLayer(randomLayer)
+
+# Sistemas de coordenadas y transfomraciones
+randomLayer.crs()
+randomLayer.crs().authid()
+
+# Crea variables con dos sistemas de coodenadas
+epsg4326 = QgsCoordinateReferenceSystem("EPSG:4326")
+epsg3857 = QgsCoordinateReferenceSystem("EPSG:3857")
+
+# Crea variable con la transformación de sistemas de coordenadas definidas
+transform = QgsCoordinateTransform(epsg4326, epsg3857, QgsProject.instance())
+
+# Crea variable con geometría y realiza la transformación de geometrias.
+geom = QgsGeometry.fromPointXY(QgsPointXY(1,1))
+geom.transform(transform)
+geom.asWkt()
+
+#
