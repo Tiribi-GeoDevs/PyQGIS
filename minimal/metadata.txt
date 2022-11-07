@@ -1,0 +1,9 @@
+[general]
+name=ProjectCRS
+description=ProjectCRS
+about=About this minimal plugin test
+version=1.0
+qgisMinimumVersion=3.0
+author=Jorge García
+email=jorge10d@gmail.com
+repository=URL to the code repository
