@@ -12,7 +12,8 @@
 # Plugin minimal by Victor Olaya
 # Crear carpeta en el perfil de QGIS en plugins (init.py - metadata.txt)
 # C:\Users\jorge\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\minimal
-
+# Plantilla de: https://github.com/wonder-sk/qgis-minimal-plugin
+ 
 # librerias
 from PyQt5.QtWidgets import *
 from qgis.gui import QgsProjectionSelectionDialog
